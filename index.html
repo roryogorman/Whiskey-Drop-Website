@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" text="text/css" />
+
 </head>
 <body>
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
@@ -37,7 +41,7 @@
             <a href="/login">Sign In / Sign Up</a>
         </div>
     </nav>
-    <article class="container mt-3">
+    <div class="container alert-container">
     <div class="row d-none d-sm-block">
     <div class="col-12">
     <div class="alert alert-warning">
@@ -45,24 +49,29 @@
     </div>
     </div>
     </div>
+    <div class="container-fluid callout-container">
      <!-- Callout section-->
+     <div class="opaque-overlay">&nbsp;</div>
     <div class="row">
         <div class="col-12">
         <section class="callout jumbotron text-center">
-            <h1>The finest whiskeys delivered to your doorstep.</h1>
-            <p class="lead">Sign up today to start receiving the world's best whiskies every month. 
+            <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+            <hr class="block-divider block-divider--orange">
+            <p class="lead">Sign up today to start receiving the world's best whiskeys every month. 
             <s class="d-none d-sm-inline">€19.99</s> 
             <span class="d-inline d-sm-none"><br></span>
             <strong><mark>First one is on us!</mark></strong></p>
-            <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+            <button class="btn btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
             <p class="text-muted"><small>You must be over 18 to sign up for our service. Please, drink responsibly</small></p>    
         </section>
         </div>
     </div>
         <!-- /Callout section-->
-        <hr>
+    </div>
+    </div>
 
         <!-- Quotes Section-->
+        <div class="container container-quotes">
         <section class="quotes">
         <div class="row">
             <div class="col-12 my-5">
@@ -99,9 +108,10 @@
             </div>
         </section>
         <!-- /Quotes Section-->
-        <hr>
+        </div>
 
         <!--Features Section-->
+        <div class="container-quotes">
         <section class="features">
         <div class="row">
             <div class="col-12 my-5">
@@ -133,7 +143,7 @@
         </div>
             </section>
         <!-- /Features Section-->
-    </article>
+        </div>
         
         <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
   <div class="modal-dialog" role="document">
